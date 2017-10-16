@@ -1,0 +1,104 @@
+@import '~styles/settings/settings';
+
+.testimonials {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="633" style="background:#fff" viewBox="0 0 2560 633">  <defs>    <linearGradient id="l_test-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <polygon fill="url(#l_test-a)" fill-rule="evenodd" points="0 3439.2 3844.12 1219.8 3844.12 0 0 2219.4" transform="translate(-642 -2093)"/></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 633px;
+
+  @include breakpoint(medium only) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="633" style="background:#fff" viewBox="0 0 1024 633">  <defs>    <linearGradient id="m_test-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <polygon fill="url(#m_test-a)" fill-rule="evenodd" points="0 2328.311 1920 1219.801 1920 0 0 1108.51" transform="translate(-448 -1538)"/></svg>');
+  }
+  @media screen and (max-width: 40em) and (min-width: 25.875em) {
+    padding-top: 104px;
+    padding-bottom: 32px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="640" height="900" style="background:#fff" viewBox="0 0 640 900">  <defs>    <linearGradient id="sm_test-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <polygon fill="url(#sm_test-a)" fill-rule="evenodd" points="0 2129.311 1920 1020.801 1920 0 0 1108.51" transform="translate(-640 -1344)"/></svg>') !important;
+    background-size: cover;
+    height: 900px;
+  }
+  @include breakpoint(small only) {
+    padding-top: 104px;
+    padding-bottom: 32px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="414" height="635" style="background:#fff" viewBox="0 0 414 635">  <defs>    <linearGradient id="s_test-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <g fill="none" fill-rule="evenodd" transform="translate(-753 -1344)">    <polygon fill="url(#s_test-a)" points="773 1683.076 773 662.506 1148 446 1148 1466.569"/>    <polygon fill="url(#s_test-a)" points="0 2129.311 1920 1020.801 1920 0 0 1108.51"/>    <text fill="#3D3E6F" font-family=".AppleSystemUIFont" font-size="14" transform="translate(991 1162)">      <tspan x="5.02" y="126">Works with the</tspan> <tspan x="8.506" y="150">tools you use. </tspan>    </text>  </g></svg>');
+    background-size: cover;
+    height: 635px;
+  }
+
+  &__title {
+    color: #33217e;
+    font-size: $fs-hg;
+    margin-bottom: rem-calc(24);
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+    }
+  }
+  &__slider {
+    max-width: 1266px;
+    margin: 0 auto;
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+    .slick-track {
+      display: flex;
+    }
+    .slick-prev-button {
+      top: 0;
+      position: absolute;
+      right: 107px;
+      z-index: 1000;
+    }
+    .slick-next-button {
+      top: 0;
+      position: absolute;
+      transform: none;
+      right: 55px;
+      z-index: 1000;
+    }
+    @include breakpoint(medium only) {
+      .slick-prev-button {
+        position: absolute;
+        left: calc(50% - 48px);
+        margin-right: 10px;
+        z-index: 1000;
+      }
+      .slick-next-button {
+        position: absolute;
+        transform: none;
+        left: calc(50% + 16px);
+        margin-left: 10px;
+        z-index: 1000;
+      }
+    }
+    @include breakpoint(small only) {
+      .slick-prev-button {
+        bottom: 0;
+        top: inherit;
+        position: absolute;
+        left: calc(50% - 48px);
+        margin-right: 10px;
+        z-index: 1000;
+      }
+      .slick-next-button {
+        bottom: 0;
+        top: inherit;
+        position: absolute;
+        transform: none;
+        left: calc(50% + 16px);
+        margin-left: 10px;
+        z-index: 1000;
+      }
+    }
+  }
+
+  &__arrow--left {
+    @include breakpoint(small only) {
+      padding-right: rem-calc(16px);
+      padding-left: rem-calc(132px);
+    }
+  }
+
+}

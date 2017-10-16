@@ -1,0 +1,19 @@
+@import '~styles/settings/settings';
+
+.pricingStarted {
+  &__contact {
+    padding-top: rem-calc(32px);
+    font-size: rem-calc(14px);
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: rem-calc(24px);
+    padding-bottom: 160px;
+  }
+
+  &__link {
+    font-size: rem-calc(14px) !important;
+    letter-spacing: 0;
+    line-height: rem-calc(24px) !important;
+    text-decoration: none !important;
+  }
+}

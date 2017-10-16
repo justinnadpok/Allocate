@@ -1,0 +1,64 @@
+@import '~styles/settings/settings';
+
+.aboutRoot {
+  padding-top: 49px;
+  margin-top: 111px;
+  padding-bottom: 89px;
+  margin-bottom: 111px;
+
+  @include breakpoint(large) {
+    max-width: 821px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint(medium only) {
+    padding-left: 102px;
+    padding-right: 101px;
+  }
+
+  @include breakpoint(small only) {
+    margin-top: 64px;
+    padding-top: 0px;
+    margin-bottom: 31px;
+  }
+
+  &__title {
+    font-family: Helvetica;
+    font-size: rem-calc(40px);
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    padding-bottom: rem-calc(24px);
+    @include breakpoint(small only) {
+      padding-bottom: rem-calc(8px);
+      font-size: 20px;
+      color: #33217E;
+      letter-spacing: 0;
+      line-height: 28px;
+    }
+  }
+
+  &__content {
+    font-family: Helvetica;
+    font-size: rem-calc(18px);
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: rem-calc(32px);
+    padding-bottom: rem-calc(24px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14px);
+      line-height: rem-calc(24px);
+      padding-left: rem-calc(32px);
+      padding-right: rem-calc(32px);
+      padding-bottom: rem-calc(16px);
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="561" height="602" viewBox="0 0 561 602">  <defs>    <linearGradient id="5-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <path fill="url(#5-a)" fill-rule="evenodd" d="M530.019205,189.99224 L488.209426,249.765624 C481.801699,258.935013 481.88794,271.043088 488.381909,280.126298 L537.289345,348.63818 C546.465419,361.524733 543.610832,379.432619 530.798251,388.688186 L437.048218,456.849608 C421.812256,467.923541 401.12297,467.923541 385.889884,456.849608 L291.878252,388.512956 C279.241028,379.343567 276.383566,361.610912 285.473399,348.896715 L466.654853,94.1474214 C473.145948,84.8918541 472.973465,72.436193 466.220772,63.3529825 L424.583476,7.21345652 C417.310461,-2.56205425 402.594822,-2.3868247 395.669646,7.64722147 L137.535087,368.10015 C126.36684,383.755905 129.830865,405.556184 145.498033,416.88578 L390.822885,595.252226 C396.969015,599.750742 404.239156,602 411.512171,602 C418.782312,602 426.055328,599.750742 432.201457,595.252226 L677.526309,416.88578 C693.107236,405.556184 696.657503,383.755905 685.489255,368.10015 L557.978631,189.819883 C551.053456,180.216729 536.771898,180.302907 530.019205,189.99224" transform="translate(-131)"/></svg>');
+  @include breakpoint(small only) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="414" height="444" viewBox="0 0 414 444">  <defs>    <linearGradient id="6-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <path fill="url(#6-a)" fill-rule="evenodd" d="M294.46337,140.127167 L263.609095,184.21252 C258.880398,190.975325 258.944041,199.905533 263.736382,206.604778 L299.828501,257.135136 C306.600149,266.639504 304.493555,279.847313 295.038281,286.673679 L225.853765,336.945558 C214.610114,345.113044 199.342085,345.113044 188.100556,336.945558 L118.722988,286.54444 C109.397122,279.781634 107.288407,266.703064 113.996412,257.325816 L247.702512,69.4376331 C252.492731,62.6112678 252.365445,53.4247005 247.382174,46.7254556 L216.655186,5.32022375 C211.287934,-1.88962141 200.428264,-1.76038234 195.317707,5.64014341 L4.8226847,271.489147 C-3.41912343,283.035917 -0.862783968,299.114528 10.6990833,307.470575 L191.740953,439.023236 C196.276599,442.341079 201.64173,444 207.008982,444 C212.374113,444 217.741365,442.341079 222.277011,439.023236 L403.318881,307.470575 C414.817105,299.114528 417.437087,283.035917 409.195279,271.489147 L315.09653,140.000046 C309.985973,132.917322 299.446641,132.980882 294.46337,140.127167"/></svg>');
+  }
+}

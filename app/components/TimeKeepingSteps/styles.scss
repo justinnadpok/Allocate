@@ -1,0 +1,75 @@
+@import '~styles/settings/settings';
+
+.timeKeepingSteps {
+  @include breakpoint(large) {
+    margin-bottom: 160px;
+  }
+  @include breakpoint(medium only) {
+    margin-top: 40px;
+  }
+  @include breakpoint(small only) {
+    margin-top: 80px;
+  }
+  &__content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__title {
+    font-size: 40px;
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: 48px;
+    padding-bottom: 24px;
+    @include breakpoint(medium only) {
+      font-size: 40px;
+      line-height: 48px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    @include breakpoint(small only) {
+      font-size: 20px;
+      line-height: 28px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+  }
+  &__sTitle {
+    font-size: 26px;
+    line-height: 24px;
+    @include breakpoint(small only) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__subTitle {
+    font-size: 18px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 32px;
+    @include breakpoint(small only) {
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 100px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include breakpoint(medium only) {
+      padding-bottom: 160px;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__illustrator {
+    @include breakpoint(medium only) {
+      height: 540px;
+      padding-bottom: 40px;
+    }
+    @include breakpoint(small only) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-bottom: 40px;
+    }
+  }
+}

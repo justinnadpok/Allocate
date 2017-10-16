@@ -1,0 +1,51 @@
+@import '~styles/settings/settings';
+
+.managementFeature {
+  margin-bottom: 240px;
+  @include breakpoint(medium only) {
+    margin-bottom: 128px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include breakpoint(small only) {
+    margin-bottom: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  &__title {
+    padding-bottom: rem-calc(16px);
+    font-size: rem-calc(40px);
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+    }
+  }
+
+  &__card {
+    padding-top: rem-calc(64px);
+  }
+
+  &__cardTitle {
+    font-size: rem-calc(18px);
+    color: #3D3E6F;
+    line-height: rem-calc(32px);
+    padding-bottom: rem-calc(16px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14px);
+      line-height: rem-calc(24px);
+    }
+  }
+
+  &__cardContent {
+    font-size: rem-calc(18px);
+    color: #3D3E6F;
+    line-height: rem-calc(32px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14px);
+      line-height: rem-calc(24px);
+    }
+  }
+}

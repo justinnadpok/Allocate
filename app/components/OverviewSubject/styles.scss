@@ -1,0 +1,49 @@
+@import '~styles/settings/settings';
+
+.overviewSubject {
+  &__title {
+    font-size: 48px;
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: 64px;
+    @include breakpoint(small only) {
+      font-size: 26px;
+      line-height: 32px;
+      padding-bottom: 80px;
+    }
+  }
+  &__content {
+    font-size: 18px;
+    color: #4B4D83;
+    letter-spacing: 0;
+    line-height: 32px;
+    @include breakpoint(small only) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  &__image {
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoint(large) {
+    max-width: 821px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+  @include breakpoint(medium only) {
+    padding-left: 102px;
+    padding-right: 102px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+  @include breakpoint(small only) {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}

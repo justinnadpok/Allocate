@@ -1,0 +1,99 @@
+@import '~styles/settings/settings';
+
+.pricingCards {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #33217E;
+  @include breakpoint(small only) {
+    margin-top: 25px;
+    margin-bottom: 37px;
+  }
+  &__card {
+    background: #FFFFFF;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.02), 0 16px 32px 0 rgba(80,84,212,0.16);
+    border-radius: 8px;
+    padding-top: rem-calc(40px);
+    padding-bottom: rem-calc(40px);
+    position: relative;
+    min-width: 288px;
+    margin-right: rem-calc(32px);
+    margin-bottom: rem-calc(48px);
+    @include breakpoint(small only) {
+      margin-right: 0px;
+      min-width: 300px;
+    }
+  }
+  &__cardTitle {
+    font-size: rem-calc(14px);
+    letter-spacing: rem-calc(2px);
+    line-height: rem-calc(32px);
+    padding-bottom: rem-calc(24px);
+    @include breakpoint(small only) {
+      font-size: 11px;
+      letter-spacing: 1.57px;
+      line-height: 32px;
+    }
+  }
+  &__cardPrice {
+    font-size: rem-calc(40px);
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem-calc(8px);
+  }
+  &__cardPriceValue {
+    font-size: rem-calc(88px);
+    color: #A770EF;
+    letter-spacing: rem-calc(-2px);
+    line-height: rem-calc(64px);
+    padding-left: rem-calc(8px);
+  }
+  &__cardMonthlyFeature {
+    font-size: rem-calc(14px);
+    color: #9697BF;
+    letter-spacing: 0;
+    line-height: rem-calc(32px);
+    padding-bottom: rem-calc(48px);
+    @include breakpoint(small only) {
+      padding-bottom: rem-calc(32px);
+    }
+  }
+  &__cardFeature {
+    font-size: rem-calc(18px);
+    color: #4B4D83;
+    letter-spacing: 0;
+    line-height: rem-calc(43px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14px);
+      line-height: rem-calc(35px);
+    }
+  }
+  &__popular {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -32px;
+    left: 16px;
+    z-index: -1;
+    border-radius: 8px;
+    background-image: linear-gradient(-135deg, #A770EF 0%, #CF8BF3 100%);
+    @include breakpoint(small only) {
+      left: 31px;
+      width: 82%;
+    }
+  }
+  &__popularLabel {
+    font-size: rem-calc(11px);
+    color: #FFFFFF;
+    letter-spacing: rem-calc(1px);
+    line-height: rem-calc(32px);
+    padding-right: rem-calc(32px);
+    @include breakpoint(small only) {
+      padding-right: 0px;
+    }
+  }
+}

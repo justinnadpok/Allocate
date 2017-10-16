@@ -1,0 +1,19 @@
+@import '~styles/settings/settings';
+
+.formTextArea {
+  &__field {
+    height: 160px;
+    @include breakpoint(small only) {
+      height: 192px;
+    }
+    min-width: 150px;
+    background: #FFFFFF;
+    border: 1px solid #C7CAE0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.02), 0 8px 16px 0 rgba(80,84,212,0.08);
+    border-radius: 4px;
+    text-transform: none;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

@@ -1,0 +1,106 @@
+@import '~styles/settings/settings';
+
+.aboutInvestor {
+  @include breakpoint(small only) {
+    margin-bottom: 80px;
+  }
+
+  &__subject {
+    @include breakpoint(large) {
+      max-width: 821px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 64px;
+    }
+    @include breakpoint(medium only) {
+      padding-left: 102px;
+      padding-right: 102px;
+      margin-bottom: 64px;
+    }
+    @include breakpoint(small only) {
+      margin-bottom: 32px;
+    }
+  }
+  &__subjectTitle {
+    font-size: 48px;
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: 64px;
+    padding-bottom: 24px;
+    @include breakpoint(small only) {
+      font-size: 20px;
+      line-height: 28px;
+      padding-bottom: 8px;
+    }
+  }
+  &__subjectContent {
+    font-size: 18px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 32px;
+    padding-bottom: 32px;
+    @include breakpoint(small only) {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  &__seperator {
+    height: 1px;
+    background: #E4E6FF;
+    margin-bottom: 64px;
+    @include breakpoint(large) {
+      max-width: 1248px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include breakpoint(medium only) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+    @include breakpoint(small only) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
+  &__investorsTitle {
+    font-size: 24px;
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: 32px;
+    padding-bottom: 64px;
+  }
+  &__card {
+    padding-bottom: 160px;
+    @include breakpoint(small only) {
+      padding-bottom: 32px;
+    }
+  }
+  &__cardAvatar {
+    padding-bottom: 32px;
+  }
+  &__cardImage {
+    background: #FFFFFF;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.02), 0 16px 32px 0 rgba(80,84,212,0.16);
+    border-radius: 8px;
+  }
+  &__cardName {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 32px;
+    padding-bottom: 8px;
+  }
+  &__cardRole {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

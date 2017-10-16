@@ -1,0 +1,53 @@
+@import '~styles/settings/settings';
+
+.timeKeepingWorks {
+  margin-bottom: 160px;
+  @include breakpoint(small only) {
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-size: rem-calc(40px);
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 160px;
+    @include breakpoint(medium only) {
+      padding-bottom: 138px;
+    }
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+      padding-bottom: 32px;
+    }
+  }
+
+  &__subTitle {
+    font-size: 14px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  &__illustrator {
+    @include breakpoint(medium only) {
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  }
+  &__background--1 {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+  }
+  &__background--2 {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+  }
+  &__background--3 {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 40px;
+  }
+}

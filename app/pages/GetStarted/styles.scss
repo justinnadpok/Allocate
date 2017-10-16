@@ -1,0 +1,111 @@
+@import '~styles/settings/settings';
+
+.getStartedPage {
+  position: absolute;
+  width: 100vw;
+  background-image: linear-gradient(-135deg, #FCFCFF 0%, #F8F8FF 100%);
+  top: 0px;
+  max-width: 100%;
+  height: 1080px;
+  min-height: 100%;
+
+  @include breakpoint(small only) {
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 850px;
+  }
+
+  &__header {
+    height: 112px;
+    @include breakpoint(small only) {
+      height: 80px;
+    }
+    @include breakpoint(medium only) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  }
+  &__signin {
+    font-size: 15px;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  &__signLink {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-transform: inherit;
+  }
+  &__title {
+    font-size: 40px;
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    @include breakpoint(small only) {
+      font-size: 20px;
+      line-height: 28px;
+      padding-top: 32px;
+      padding-bottom: 8px;
+    }
+  }
+  &__subTitle {
+    font-size: 18px;
+    color: #4B4D83;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 32px;
+    @include breakpoint(small only) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  &__field {
+    padding-bottom: 24px;
+  }
+  &__form {
+    max-width: 394px;
+    padding-bottom: 64px;
+  }
+  &__submit {
+    padding-top: 8px;
+    text-align: center;
+  }
+  &__terms {
+    text-align: center;
+    font-size: 14px;
+    color: #9697BF;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  &__termLink {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: inherit;
+  }
+  &__button {
+    padding-right: 120px !important;
+    padding-left: 120px !important;
+    font-family: Helvetica !important;
+    font-size: rem-calc(18px) !important;
+    font-weight: normal;
+    color: #FFFFFF !important;
+    letter-spacing: 0 !important;
+    line-height: rem-calc(64px) !important;
+    background-image: linear-gradient(-135deg, #6EDFFF 0%, #37C7FF 100%);
+    @include breakpoint(small only) {
+      font-size: rem-calc(18px) !important;
+      letter-spacing: 1px !important;
+      padding: 0px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

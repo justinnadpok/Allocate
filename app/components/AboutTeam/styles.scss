@@ -1,0 +1,96 @@
+@import '~styles/settings/settings';
+
+.aboutTeam {
+  margin-bottom: 160px;
+  &__title {
+    font-family: Helvetica;
+    font-size: rem-calc(40px);
+    color: #33217E;
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    padding-bottom: rem-calc(24px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+    }
+  }
+
+  &__content {
+    font-family: Helvetica;
+    font-size: rem-calc(18px);
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: rem-calc(32px);
+    padding-bottom: rem-calc(112px);
+    @include breakpoint(large) {
+      max-width: rem-calc(821px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include breakpoint(medium only) {
+      margin-left: rem-calc(102px);
+      margin-right: rem-calc(101px);
+      padding-bottom: rem-calc(80px);
+    }
+    @include breakpoint(small only) {
+      margin-left: rem-calc(32px);
+      margin-right: rem-calc(32px);
+      font-size: rem-calc(14px);
+      line-height: rem-calc(24px);
+      padding-bottom: rem-calc(80px);
+    }
+  }
+
+  &__memberCard {
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 80px;
+  }
+
+  &__members {
+    justify-content: center;
+    padding-left: 80px;
+  }
+
+  &__memberAvatar {
+    max-width: 288px;
+  }
+
+  &__memberLabel {
+    position: absolute;
+    top: rem-calc(64px);
+    left: rem-calc(32px);
+    background-image: linear-gradient(-180deg, #FCFCFF 0%, #F8F8FF 100%);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    padding-left: rem-calc(18px);
+    padding-top: rem-calc(246px);
+  }
+
+  &__memberName {
+    font-size: rem-calc(14px);
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: rem-calc(24px);
+    position: absolute;
+    bottom: 32px;
+  }
+
+  &__memberRole {
+    font-size: rem-calc(14px);
+    color: #9697BF;
+    letter-spacing: 0;
+    line-height: rem-calc(24px);
+    position: absolute;
+    bottom: 8px;
+  }
+
+  &__teamMark {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}

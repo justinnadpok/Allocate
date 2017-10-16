@@ -1,0 +1,82 @@
+@import '~styles/settings/settings';
+
+.feature {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="893" style="background:#fff" viewBox="0 0 2560 893">  <defs>    <linearGradient id="l_feature-a" x1="-10.887%" x2="89.603%" y1="97.934%" y2="20.263%">      <stop offset="0%" stop-color="#A770EF"/>      <stop offset="4.246%" stop-color="#A971EF"/>      <stop offset="100%" stop-color="#CF8BF3"/>    </linearGradient>    <linearGradient id="l_feature-b" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <g fill="none" fill-rule="evenodd" transform="translate(0 -2592)">    <path fill="url(#l_feature-a)" d="M1298.15472,1406.84394 C1304.72359,1403.05202 1312.8156,1403.05202 1319.38314,1406.84394 C1325.95201,1410.63587 1330,1417.6439 1330,1425.22775 C1330,1484.16845 1330,1561.64288 1330,1657.65105 L1330,1682.08122 L1308.76893,1694.41867 C581.133166,2114.51962 155.491063,2360.26444 31.8426224,2431.65313 C25.2745508,2435.44518 17.1822791,2435.44518 10.6142075,2431.65313 C4.04613589,2427.86107 0.000132677593,2420.8529 0,2413.26879 C0,2324.85748 0,2255.07701 0,2180.84655 C0.000132677593,2165.67752 8.09227178,2151.66146 21.228415,2144.07761 C174.622288,2055.51531 1112.68206,1513.9267 1298.15472,1406.84394 Z" transform="translate(-173 427)"/>    <polygon fill="url(#l_feature-b)" points="0 3439.2 3844.12 1219.8 3844.12 0 0 2219.4" transform="translate(-642 1392)"/>  </g></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #33217E;
+  padding-top: 85px;
+  padding-bottom: 18px;
+  height: 893px;
+
+  @include breakpoint(medium only) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="808" style="background:#fff" viewBox="0 0 1024 808">  <defs>    <linearGradient id="m_feature-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <polygon fill="url(#m_feature-a)" fill-rule="evenodd" points="0 2328.311 1920 1219.801 1920 0 0 1108.51" transform="translate(-448 -730)"/></svg>');
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 808px;
+  }
+  @media screen and (max-width: 40em) and (min-width: 25.875em) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="640" height="682" style="background:#fff" viewBox="0 0 640 682">  <defs>    <linearGradient id="sm_feature-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <polygon fill="url(#sm_feature-a)" fill-rule="evenodd" points="0 2129.311 1920 1020.801 1920 0 0 1108.51" transform="translate(-640 -662)"/></svg>') !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 682px;
+  }
+  @include breakpoint(small only) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="414" height="682" style="background:#fff" viewBox="0 0 414 682">  <defs>    <linearGradient id="s_feature-a" x1="50%" x2="50%" y1="0%" y2="100%">      <stop offset="0%" stop-color="#FCFCFF"/>      <stop offset="100%" stop-color="#F8F8FF"/>    </linearGradient>  </defs>  <g fill="none" fill-rule="evenodd" transform="translate(-753 -662)">    <polygon fill="url(#s_feature-a)" points="773 1683.076 773 662.506 1148 446 1148 1466.569"/>    <polygon fill="url(#s_feature-a)" points="0 2129.311 1920 1020.801 1920 0 0 1108.51"/>  </g></svg>');
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 682px;
+  }
+  &__title {
+    color: #33217E;
+    margin-bottom: rem-calc(80px);
+    font-size: $fs-hg;
+    letter-spacing: 0;
+    line-height: rem-calc(48px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+      margin-bottom: 0;
+    }
+  }
+  &__titleSymbol {
+    font-size: $fs-hg;
+    color: #806BFF;
+    letter-spacing: 0;
+    @include breakpoint(small only) {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+      color: #33217E;
+    }
+  }
+  &__icon {
+    margin-bottom: rem-calc(24);
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(16);
+    }
+  }
+  &__cardTitle {
+    font-size: $fs-mx;
+    color: #3D3E6F;
+    letter-spacing: 0;
+    line-height: rem-calc(32px);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14px);
+      line-height: rem-calc(24px);
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  &__card {
+    @include breakpoint(small only) {
+      padding-top: rem-calc(32px);
+    }
+  }
+}
